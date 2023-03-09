@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.cards {
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card {
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.one {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.three {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.icon {
+    margin-bottom: 1.5em;
+}
+
+.title {
+    color: hsl(0, 0%, 95%);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 2rem;
+}
+
+.text {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.button {
+    margin-top: auto;
+}
+
+.more {
+    border: none;
+    border-radius: 30px;
+    padding: 1em 2em;
+    font-size: 1.5rem;
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: color .3s, background-color .3s, border .3s;
+}
+
+.more:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.btn-one {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-two {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-three {
+    color: hsl(179, 100%, 13%);
+}
+
+.footer {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color:hsl(31, 77%, 52%);
+}
+
+@media(min-width: 1024px) {
+    .cards {
+        display: flex;
+        width: 70%;
+        min-height: 480px;
+    }
+}
+
+
+@media(min-width: 1260px) {
+    .cards {
+        width: 55%;
+    }
+}
